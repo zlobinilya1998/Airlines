@@ -39,3 +39,18 @@ p {
     float: right;
     margin-right: 1rem;
 }
+.main_time{
+    width:100%;
+    display:flex
+}
+.main_time_block{
+    width:33.3%; 
+    text-align:center;
+    display: flex;
+}
+.main_time_block>div{
+    width: 50%;
+}
+.main_time_block>div>span{
+    color:rgb(42, 152, 255);
+}

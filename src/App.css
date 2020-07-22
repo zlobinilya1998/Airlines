@@ -20,3 +20,9 @@
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+.radio_block label{
+  margin-top: 5px;
+}
+.input{
+  float: right;
+}

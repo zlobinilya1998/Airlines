@@ -11,15 +11,15 @@ function App() {
           <div >
             <div>
               <input type='radio' name='sorting'></input>
-              <label>- по возрастанию цены</label>
+              <label>&nbsp;- по возрастанию цены</label>
             </div>
             <div>
               <input type='radio' name='sorting'></input>
-              <label>- по убыванию цены</label>
+              <label>&nbsp;- по убыванию цены</label>
             </div>
             <div>
               <input type='radio' name='sorting'></input>
-              <label>- по времени в пути</label>
+              <label>&nbsp;- по времени в пути</label>
             </div>
           </div>
         </form>
@@ -30,11 +30,11 @@ function App() {
           <div>
             <div>
               <input type='checkbox' name='sorting'></input>
-              <label>- одна пересадка</label>
+              <label>&nbsp;- одна пересадка</label>
             </div>
             <div>
               <input type='checkbox' name='sorting'></input>
-              <label>- без пересадок</label>
+              <label>&nbsp;- без пересадок</label>
             </div>
           </div>
         </form>
@@ -44,12 +44,12 @@ function App() {
           <p><strong>Цена</strong></p>
           <div>
             <div>
-              <label>От </label>
-              <input type='number' name='sorting' placeholder='0'></input>
+              <label>От &nbsp;</label>
+              <input type='number' name='sorting' placeholder='0' className="input"></input>
             </div>
             <div>
-              <label>До </label>
-              <input type='number' name='sorting' placeholder='10000'></input>
+              <label>До &nbsp;</label>
+              <input type='number' name='sorting' placeholder='10000' className="input"></input>
             </div>
           </div>
         </form>
@@ -60,11 +60,11 @@ function App() {
           <div>
             <div>
               <input type='checkbox' name='sorting'></input>
-              <label>- LOT Polish Airlines</label>
+              <label>&nbsp;- LOT Polish Airlines</label>
             </div>
             <div>
               <input type='checkbox' name='sorting'></input>
-              <label>- Аэрофлот</label>
+              <label>&nbsp;- Аэрофлот</label>
             </div>
           </div>
         </form>
