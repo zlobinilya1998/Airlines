@@ -1,25 +1,76 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div className="container">
+     <div className='radio_container'>
+      <div className='radio_block'>
+        <form style={{textAlign:'start'}}>
+          <p><strong>Сортировать</strong></p>
+          <div >
+            <div>
+              <input type='radio' name='sorting'></input>
+              <label>- по возрастанию цены</label>
+            </div>
+            <div>
+              <input type='radio' name='sorting'></input>
+              <label>- по убыванию цены</label>
+            </div>
+            <div>
+              <input type='radio' name='sorting'></input>
+              <label>- по времени в пути</label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div className='radio_block'>
+        <form>
+          <p><strong>Фильтровать</strong></p>
+          <div>
+            <div>
+              <input type='checkbox' name='sorting'></input>
+              <label>- одна пересадка</label>
+            </div>
+            <div>
+              <input type='checkbox' name='sorting'></input>
+              <label>- без пересадок</label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div className='radio_block'>
+        <form>
+          <p><strong>Цена</strong></p>
+          <div>
+            <div>
+              <label>От </label>
+              <input type='number' name='sorting' placeholder='0'></input>
+            </div>
+            <div>
+              <label>До </label>
+              <input type='number' name='sorting' placeholder='10000'></input>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div className='radio_block'>
+        <form>
+          <p><strong>Авиакомпания</strong></p>
+          <div>
+            <div>
+              <input type='checkbox' name='sorting'></input>
+              <label>- LOT Polish Airlines</label>
+            </div>
+            <div>
+              <input type='checkbox' name='sorting'></input>
+              <label>- Аэрофлот</label>
+            </div>
+          </div>
+        </form>
+      </div>
+     </div>
+   </div>
   );
 }
 
