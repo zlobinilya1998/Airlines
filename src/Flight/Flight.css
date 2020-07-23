@@ -1,0 +1,58 @@
+.main{
+    margin: 0 auto;
+    width: 45%;
+}
+.main_footer{
+    height: 60px;
+    width: 100%;
+    background-color: rgb(13, 122, 195);
+}
+p {
+    margin: 0;
+}
+.main_block{
+    background-color: white;
+    width: 100%;
+    height: 400px;
+}
+.main_btn{
+    width: 100%;
+    position: relative;
+    height: 2rem;
+    background-color: #ffc354;
+    transition: all ease 1s;
+}
+.main_btn:hover{
+    color: white;    
+    background-color: #f3a310;
+}
+
+.main_time{
+    width:100%;
+    display:flex
+}
+.main_time_block{
+    width:33.3%; 
+    text-align:center;
+    display: flex;
+}
+
+.main_time_block>div{
+    width: 50%;
+}
+.main_time_block>div>span{
+    color:rgb(42, 152, 255);
+}
+.prices{
+    text-align: end;
+    color: white;
+    width: 95%;
+    font-size: larger;
+}
+.passenger{
+    text-align: end;  
+    color: white;
+    width: 95%;
+    font-size: small;
+
+}
