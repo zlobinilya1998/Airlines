@@ -9,7 +9,7 @@ class Main extends React.Component {
     render(){
         let flightsList = this.state.flights.map((flightElement,index) =>{
             return (
-                <Flight
+                <Container
                 key={index}
                 price={flightElement.flight.price.total.amount}
                 duration={flightElement.flight.legs[0].duration}
@@ -17,7 +17,8 @@ class Main extends React.Component {
             )
         })
         return(
-            <div>{flightsList}
+            <div>
+                {flightsList}
             </div>
         )
     }
