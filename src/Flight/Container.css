@@ -1,6 +1,11 @@
 .main{
     margin: 0 auto;
     width: 45%;
+    transition: all ease .1s;
+    margin-bottom: 20px;
+}
+.main:hover{
+    outline: rgb(108, 243, 153) 5px solid;
 }
 .main_footer{
     height: 60px;
@@ -32,11 +37,14 @@ p {
     display:flex
 }
 .main_time_block{
-    width:33.3%; 
+    width:30%; 
     text-align:center;
     display: flex;
 }
-
+.main_time_duration{
+    width: 40%;
+    text-align: center;
+}
 .main_time_block>div{
     width: 50%;
 }
@@ -55,4 +63,7 @@ p {
     width: 95%;
     font-size: small;
 
+}
+hr{
+    background-color: black;
 }
