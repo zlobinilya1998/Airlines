@@ -1,21 +1,13 @@
-.container{
-  width: 300px;
-  height: 700px;
-  background-color: rgb(231, 230, 230);
-  position: absolute;
-  
-  
+.radio{
+  display: flex;
+  flex-direction: row;
 }
 .radio_container{
   background-color: rgb(255, 255, 255);
-  margin-top: 3em;
-
-
+  display: inline-block;
+  height: max-content;
 }
 .radio_block{
-  display: flex;
-  flex-direction: column;
-  width: max-content;
   margin-left: 3rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -25,4 +17,7 @@
 }
 .input{
   float: right;
+}
+.flightsList{
+  width: 50%;
 }

@@ -1,13 +1,15 @@
 .main{
-    margin: 0 auto;
-    width: 45%;
     transition: all ease .1s;
     margin-bottom: 20px;
+    background-color: whitesmoke;
+    padding: 0;
+    margin-left: 20%;
+    margin-right: auto;
 }
-.main:hover{
-    outline: rgb(108, 243, 153) 5px solid;
-}
-.main_footer{
+    .main:hover{
+        outline: rgb(108, 243, 153) 5px solid;
+    }   
+.footer{
     height: 60px;
     width: 100%;
     background-color: rgb(13, 122, 195);
@@ -20,38 +22,38 @@ p {
     width: 100%;
     height: 400px;
 }
-.main_btn{
-    width: 100%;
-    position: relative;
-    height: 2rem;
-    background-color: #ffc354;
-    transition: all ease 1s;
-}
-.main_btn:hover{
-    color: white;    
-    background-color: #f3a310;
-}
+    .main_btn{
+        width: 100%;
+        position: relative;
+        height: 2rem;
+        background-color: #ffc354;
+        transition: all ease 1s;
+    }
+    .main_btn:hover{
+        color: white;    
+        background-color: #f3a310;
+    }
 
-.main_time{
+.time{
     width:100%;
     display:flex
 }
-.main_time_block{
-    width:30%; 
-    text-align:center;
-    display: flex;
-}
-.main_time_duration{
-    width: 40%;
-    text-align: center;
-}
-.main_time_block>div{
-    width: 50%;
-}
-.main_time_block>div>span{
-    color:rgb(42, 152, 255);
-}
-.prices{
+    .time_block{
+        width:30%; 
+        text-align:center;
+        display: flex;
+    }
+    .time_duration{
+        width: 40%;
+        text-align: center;
+    }
+    .time_block>div{
+        width: 50%;
+    }
+    .time_block>div>span{
+        color:rgb(42, 152, 255);
+    }
+.price{
     text-align: end;
     color: white;
     width: 95%;
@@ -67,3 +69,35 @@ p {
 hr{
     background-color: black;
 }
+.route{
+    text-align:center;
+    margin-bottom:10px;
+    margin-top:10px
+}
+.transfer{
+    text-align:center;
+    color:#FAA342;
+    font-size:.9rem;
+    position: relative;
+    margin-top: 15px;
+}
+    .transfer:before{
+        content: '';
+        display: block;
+        width: 40%;
+        height: 1px;
+        background: rgb(110, 110, 110);
+        position: absolute;
+        left: 0;
+        top: 50%;
+    }
+    .transfer::after{
+        content: '';
+        display: block;
+        width: 40%;
+        height: 1px;
+        background: rgb(110, 110, 110);
+        position: absolute;
+        right: 0;
+        top: 50%;
+    }
