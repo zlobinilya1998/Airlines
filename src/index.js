@@ -2,13 +2,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Main from './main/main';
+import Main from './Components/main/main';
+import Navigation from './Components/Navigation/Navigation'
 
 
 
 ReactDOM.render(
   <>
-    {/* <Main/> */}
+    <Navigation/>
+    <Main/>
   </>,
   document.getElementById('root')
 );

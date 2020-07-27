@@ -1,0 +1,10 @@
+.navbar{
+    background-color: rgb(59, 226, 255) !important;
+    height: 50px;
+}
+.nav-link{
+    transition: all ease-in .3s
+}
+.nav-link:hover{
+    color: wheat !important;
+}

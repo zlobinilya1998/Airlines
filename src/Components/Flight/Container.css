@@ -3,8 +3,9 @@
     margin-bottom: 20px;
     background-color: whitesmoke;
     padding: 0;
-    margin-left: 20%;
+    margin-left: 10%;
     margin-right: auto;
+    width: 800px;
 }
     .main:hover{
         outline: rgb(108, 243, 153) 5px solid;

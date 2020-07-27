@@ -1,7 +1,7 @@
 import React from 'react';
-import data from '../flights.json'
+import data from '../../flights.json'
 import Container from '../Flight/Container'
-import '../App/App.css';
+import './App.css';
 
 class Main extends React.Component {
     constructor(){
@@ -35,16 +35,14 @@ class Main extends React.Component {
     sortTransferOne = () => {
         this.setState({flights:this.state.flights.filter(flight => flight.flight.legs[0].segments.length === 2)})
     }
-    // Сортировка по перевозщику
-    // sortByCarrier = () => {
-        // this.setState({flights:this.state.flights.filter(flight => flight.flight.legs[0].segments[1].operatingAirline.caption ==                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               )})
-    //
-    
+    // 
+
     render(){
         let flightsList = this.state.flights.map((flightElement,index) =>{
             let Flight = flightElement.flight
             let Array = flightElement.flight.legs[0].segments[0]
             // console.log(ArrayReturn.departureCity.caption)
+
             return (
                 <Container
                 key={index}
@@ -59,7 +57,7 @@ class Main extends React.Component {
                 // Служба перевозки
                 carrier={flightElement.flight.carrier.caption}
                 // Пересадка
-                obj={Flight.legs[0].segments}
+                obj={Flight.legs[0].segments}       
                 // Прибытие
                 arrivalCity={Array.arrivalCity.caption} 
                 arrivalDate={Array.arrivalDate}
@@ -90,6 +88,7 @@ class Main extends React.Component {
                                 </div>
                             </form>
                         </div>
+                        <hr/>
                         <div className='radio_block'>
                             <form>
                                 <strong>Фильтровать</strong>
@@ -105,28 +104,26 @@ class Main extends React.Component {
                                 </div>
                             </form>
                         </div>
+                        <hr/>
                         <div className='radio_block'>
                             <form>
                                 <strong>Цена</strong>
-                                <div>
-                                    <label>От &nbsp;</label>
-                                    <input type='number' name='sorting' placeholder='0' className="input" step='5000'></input>
-                                </div>
                                 <div>
                                     <label>До &nbsp;</label>
                                     <input type='number' name='sorting' placeholder='150000' className="input" step='5000'></input>
                                 </div>
                             </form>
                         </div>
+                        <hr/>
                         <div className='radio_block'>
                             <form>
                                 <strong>Авиакомпания</strong>
                                 <div>
-                                    <input type='checkbox' name='sorting'></input>
+                                    <input type='radio' name='sorting'></input>
                                     <label>&nbsp;- LOT Polish Airlines</label>
                                 </div>
                                 <div>
-                                    <input onChange={this.sortByCarrier} type='checkbox' name='sorting'></input>
+                                    <input type='radio' name='sorting'></input>
                                     <label>&nbsp;- Аэрофлот</label>
                                 </div>
                             </form>

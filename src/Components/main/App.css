@@ -3,21 +3,20 @@
   flex-direction: row;
 }
 .radio_container{
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(146, 239, 255);
   display: inline-block;
   height: max-content;
+  width: 20%;
 }
 .radio_block{
-  margin-left: 3rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  margin-top: .5rem;
+  margin-left: 3.8rem;
+  padding-top: .2rem;
 }
 .radio_block label{
   margin-top: 5px;
 }
-.input{
-  float: right;
-}
+
 .flightsList{
   width: 50%;
 }
