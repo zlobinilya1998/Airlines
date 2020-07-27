@@ -8,7 +8,7 @@ import Main from './main/main';
 
 ReactDOM.render(
   <>
-    <Main/>
+    {/* <Main/> */}
   </>,
   document.getElementById('root')
 );
