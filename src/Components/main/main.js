@@ -41,7 +41,8 @@ class Main extends React.Component {
         let flightsList = this.state.flights.map((flightElement,index) =>{
             let Flight = flightElement.flight
             let Array = flightElement.flight.legs[0].segments[0]
-            // console.log(ArrayReturn.departureCity.caption)
+            let Time = new Date(Array.arrivalDate)
+            console.log(Time)
 
             return (
                 <Container
@@ -67,6 +68,7 @@ class Main extends React.Component {
             )
         })
         return(
+            <>  
                 <div className='radio'>
                     <div className='radio_container'>
                         <div className='radio_block'>
@@ -131,6 +133,7 @@ class Main extends React.Component {
                     </div>
                     <div className='flightsList'>{flightsList}</div>
                 </div>
+            </>
         )
     }
 }

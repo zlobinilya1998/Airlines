@@ -3,12 +3,11 @@
     height: 45px;
 }
 .nav-link{
-    transition: all ease-in .3s
+    transition: all ease-in .1s
 }
 .nav-link:hover{
     color: wheat !important;
 }
-.nav-link:hover:after{
-    height: 100%;
-    width: 2px;
+.nav-link:hover{
+    border-bottom: rgb(27, 26, 26) 2px solid;
 }
