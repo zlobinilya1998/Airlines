@@ -3,6 +3,7 @@ import data from '../../flights.json'
 import Container from '../Flight/Container'
 import './App.css';
 
+
 class Main extends React.Component {
     constructor(){
         super()
@@ -10,11 +11,6 @@ class Main extends React.Component {
             flights: data.result.flights,
             showTicket:false
         };
-    }
-    toogleTicket = () =>{
-        this.setState({
-            showTicket: !this.setState.showTicket
-        })
     }
     // Сортировка по цене
     sortAscendingPrice = () =>{
@@ -36,6 +32,7 @@ class Main extends React.Component {
         this.setState({flights:this.state.flights.filter(flight => flight.flight.legs[0].segments.length === 2)})
     }
     // 
+    
 
     render(){
         let flightsList = this.state.flights.map((flightElement,index) =>{

@@ -10,7 +10,8 @@ import Navigation from './Components/Navigation/Navigation'
 ReactDOM.render(
   <>
     <Navigation/>
-    <Main/>
+    {/* <Example/> */}
+    {/* <Main/> */} 
   </>,
   document.getElementById('root')
 );
