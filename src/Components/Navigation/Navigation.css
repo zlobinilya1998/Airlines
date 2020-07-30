@@ -1,6 +1,8 @@
 .navbar{
     background-color: rgb(59, 226, 255) !important;
     height: 45px;
+    cursor: pointer;
+    background: transparent;
 }
 .nav-link{
     transition: all ease-in .1s
@@ -8,6 +10,10 @@
 .nav-link:hover{
     color: wheat !important;
 }
-.nav-link:hover{
-    border-bottom: rgb(27, 26, 26) 2px solid;
+button{
+    border: none;
+    background: none;
+}
+button:focus{
+    outline: none;
 }

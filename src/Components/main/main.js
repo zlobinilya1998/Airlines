@@ -40,9 +40,11 @@ class Main extends React.Component {
     render(){
         let flightsList = this.state.flights.map((flightElement,index) =>{
             let Flight = flightElement.flight
-            let Array = flightElement.flight.legs[0].segments[0]
-            let Time = new Date(Array.arrivalDate)
-            console.log(Time)
+            let Array = Flight.legs[0].segments[0]
+            let arrivalDate = (new Date(Array.arrivalDate)).toString()
+            let departureDate = (new Date(Array.departureDate)).toString() 
+            // console.log(arrivalArray.arrivalAirport.caption)
+            // console.log(typeof(arrivalArray))
 
             return (
                 <Container
@@ -52,7 +54,7 @@ class Main extends React.Component {
                 duration={Flight.legs[0].duration}
                 // Отправление
                 departureCity={Array.departureCity.caption}
-                departureDate={Array.departureDate}
+                departureDate={departureDate}
                 departureAirport={Array.departureAirport.caption}
                 departureAirportUid={Array.departureAirport.uid}
                 // Служба перевозки
@@ -61,7 +63,7 @@ class Main extends React.Component {
                 obj={Flight.legs[0].segments}       
                 // Прибытие
                 arrivalCity={Array.arrivalCity.caption} 
-                arrivalDate={Array.arrivalDate}
+                arrivalDate={arrivalDate}
                 arrivalAirport={Array.arrivalAirport.caption}
                 arrivalAirportUid={Array.arrivalAirport.uid}        
                 />    

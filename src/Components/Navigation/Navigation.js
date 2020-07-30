@@ -13,15 +13,15 @@ class Navigation extends React.Component{
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav mr-auto">
                             <li className="nav-item active">
-                                <a className="nav-link">
+                                <button className="nav-link">
                                     Главная<span className="sr-only">(current)</span>
-                                </a>
+                                </button>
                             </li>
 
                             <li className="nav-item">
-                                <a className="nav-link">
+                                <button className="nav-link">
                                     Маршруты
-                                </a>
+                                </button>
                             </li>
                         </ul>
                     </div>

@@ -1,12 +1,15 @@
 .main{
     transition: all ease .1s;
     margin-bottom: 20px;
+    margin-left: 10vh;
+    margin-top: 1vh;
     background-color: whitesmoke;
     width: 800px;
     border: solid 3px silver;
+    cursor: pointer !important;
 }
     .main:hover{
-        outline: rgb(108, 243, 153) 5px solid;
+        outline: rgb(108, 243, 153) 3px solid;
     }   
 
 .main_block{
@@ -23,13 +26,12 @@
     }
     .main_btn:hover{
         color: white;    
-        background-color: #f3a310;
-        
+        background-color: #f3a310; 
     }
-
 .time{
     width:100%;
-    display:flex
+    display:flex;
+    justify-content: space-evenly;
 }
     .time_block{
         width:30%; 
@@ -37,8 +39,9 @@
         display: flex;
     }
     .time_duration{
-        width: 40%;
+        width: 20%;
         text-align: center;
+        background-color: turquoise;
     }
     .time_block>div{
         width: 50%;

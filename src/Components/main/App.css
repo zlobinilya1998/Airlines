@@ -3,7 +3,7 @@
   flex-direction: row;
 }
 .radio_container{
-  background-color: rgb(146, 239, 255);
+  background-color: rgba(63, 223, 251, 0.513);
   display: inline-block;
   height: max-content;
   width: 20%;
