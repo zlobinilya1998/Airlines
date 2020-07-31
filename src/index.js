@@ -2,16 +2,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Main from './Components/main/main';
 import Navigation from './Components/Navigation/Navigation'
+// import Carousel from './Components/Carousel/Carousel'
+import Footer from './Components/Footer/Footer'
 
 
 
 ReactDOM.render(
   <>
     <Navigation/>
-    {/* <Example/> */}
-    {/* <Main/> */} 
+    {/* <Carousel/> */}
+    <Footer/>
   </>,
   document.getElementById('root')
 );

@@ -1,10 +1,11 @@
 import React from 'react';
 import data from '../../flights.json'
-import Container from '../Flight/Container'
+import Ticket from '../Ticket/Ticket'
 import './App.css';
 
 
-class Main extends React.Component {
+
+export default class Main extends React.Component {
     constructor(){
         super()
         this.state = {
@@ -13,6 +14,7 @@ class Main extends React.Component {
         };
     }
     // Сортировка по цене
+
     sortAscendingPrice = () =>{
         this.setState({flights:[...this.state.flights].sort((a,b)=>a.flight.price.total.amount-b.flight.price.total.amount)})
     }
@@ -31,7 +33,6 @@ class Main extends React.Component {
     sortTransferOne = () => {
         this.setState({flights:this.state.flights.filter(flight => flight.flight.legs[0].segments.length === 2)})
     }
-    // 
     
 
     render(){
@@ -44,7 +45,7 @@ class Main extends React.Component {
             // console.log(typeof(arrivalArray))
 
             return (
-                <Container
+                <Ticket
                 key={index}
                 // 
                 price={Flight.price.total.amount}
@@ -136,5 +137,3 @@ class Main extends React.Component {
         )
     }
 }
-
-export default Main

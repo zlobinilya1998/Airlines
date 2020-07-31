@@ -1,0 +1,15 @@
+.text{
+    font-Size:1.7rem;
+    text-Align:center;
+    margin-Top:10vh;
+    margin-Bottom:auto;
+    color:gray;
+    text-Shadow: #474747 1px 2px;
+}
+.air{
+    height: 60vh;
+    margin-top: 10vh;
+}
+.work{
+    margin-top: 20vh;
+}

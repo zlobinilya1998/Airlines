@@ -1,19 +1,7 @@
-.navbar{
-    background-color: rgb(59, 226, 255) !important;
-    height: 45px;
-    cursor: pointer;
-    background: transparent;
+.NavLink{
+    transition: all ease 1s;
 }
-.nav-link{
-    transition: all ease-in .1s
-}
-.nav-link:hover{
-    color: wheat !important;
-}
-button{
-    border: none;
-    background: none;
-}
-button:focus{
-    outline: none;
+.NavLink:hover{
+    color: rgb(51, 221, 243) !important;
+    transform: scale(1.2);
 }
