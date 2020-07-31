@@ -10,7 +10,8 @@ export default class Main extends React.Component {
         super()
         this.state = {
             flights: data.result.flights,
-            showTicket:false
+            x: data.result.flights,
+            y: data.result.flights,
         };
     }
     // Сортировка по цене
@@ -25,14 +26,14 @@ export default class Main extends React.Component {
     sortAscendingTime = () =>{
         this.setState({flights:[...this.state.flights].sort((a,b)=>a.flight.legs[0].duration-b.flight.legs[0].duration)})
     }
-
     // Сортировка по пересадкам
-    sortTransferZero = () => {
-        this.setState({flights:this.state.flights.filter(flight => flight.flight.legs[0].segments.length === 1)})
-    }
     sortTransferOne = () => {
-        this.setState({flights:this.state.flights.filter(flight => flight.flight.legs[0].segments.length === 2)})
+        this.setState({flights:this.state.y.filter(flight => flight.flight.legs[0].segments.length === 2)})
     }
+    sortTransferZero = () => {
+        this.setState({flights:this.state.x.filter(flight => flight.flight.legs[0].segments.length === 1)})
+    }
+
     
 
     render(){
@@ -103,30 +104,6 @@ export default class Main extends React.Component {
                                         <input onChange={this.sortTransferZero} type='radio' name='sorting'></input>
                                         <label>&nbsp;- без пересадок</label>
                                     </div>
-                                </div>
-                            </form>
-                        </div>
-                        <hr/>
-                        <div className='radio_block'>
-                            <form>
-                                <strong>Цена</strong>
-                                <div>
-                                    <label>До &nbsp;</label>
-                                    <input type='number' name='sorting' placeholder='150000' className="input" step='5000'></input>
-                                </div>
-                            </form>
-                        </div>
-                        <hr/>
-                        <div className='radio_block'>
-                            <form>
-                                <strong>Авиакомпания</strong>
-                                <div>
-                                    <input type='radio' name='sorting'></input>
-                                    <label>&nbsp;- LOT Polish Airlines</label>
-                                </div>
-                                <div>
-                                    <input type='radio' name='sorting'></input>
-                                    <label>&nbsp;- Аэрофлот</label>
                                 </div>
                             </form>
                         </div>

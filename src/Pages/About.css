@@ -5,6 +5,7 @@
     margin-Bottom:auto;
     color:gray;
     text-Shadow: #474747 1px 2px;
+    pointer-events: none;
 }
 .air{
     height: 60vh;
