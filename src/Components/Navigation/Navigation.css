@@ -1,7 +1,12 @@
 .NavLink{
-    transition: all ease 1s;
+    transition: all ease .6s;
 }
 .NavLink:hover{
     color: rgb(51, 221, 243) !important;
-    transform: scale(1.2);
+}
+.brand{
+    transition: all ease .6s;
+}
+.brand:hover{
+    color: rgb(51, 221, 243) !important;
 }

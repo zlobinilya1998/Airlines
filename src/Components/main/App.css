@@ -3,10 +3,11 @@
   flex-direction: row;
 }
 .radio_container{
-  background-color: rgba(63, 223, 251, 0.513);
+  background-color: #343a40;
   display: inline-block;
   height: max-content;
   width: 20%;
+  color: white;
 }
 .radio_block{
   margin-top: .5rem;
@@ -15,7 +16,4 @@
 }
 .radio_block label{
   margin-top: 5px;
-}
-.flightsList{
-  background-color: ;
 }

@@ -1,6 +1,6 @@
 .main{
-    transition: all ease .1s;
-    margin: 10vh;
+    transition: all ease .5s;
+    margin: 6vh;
     background-color: whitesmoke;
     width: 800px;
     border: solid 3px silver;
@@ -8,6 +8,7 @@
 }
     .main:hover{
         outline: rgb(108, 243, 153) 3px solid;
+        transform: scale(1.05);
     }   
 
 .main_block{
