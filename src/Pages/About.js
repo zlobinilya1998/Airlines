@@ -17,13 +17,13 @@ export default class About extends React.Component{
                     </img>
                     <h1 
                     className='w-50 text'>
-                        Более <span style={{color:'green'}}>300 направлений</span>, прямые агенты авиакомпаний и официальные агенты
+                        Более <span style={{color:'turquoise',borderBottom:'2px solid gray'}}>300 направлений</span>, прямые агенты авиакомпаний и официальные агенты
                     </h1>
                 </div>
 
                 <h2 
                     className='work text'>
-                        Стаж работы ключевых сотрудников в среднем составляет <span style={{color:'green'}}>15 лет</span>
+                        Стаж работы ключевых сотрудников в среднем составляет <span style={{color:'turquoise',borderBottom:'2px solid gray'}}>15 лет</span>
                 </h2>
                 <img 
                     alt='yellow'

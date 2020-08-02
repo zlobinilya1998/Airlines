@@ -8,7 +8,7 @@
 }
     .main:hover{
         outline: rgb(108, 243, 153) 3px solid;
-        transform: scale(1.05);
+        transform: scale(1.02);
     }   
 
 .main_block{

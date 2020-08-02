@@ -74,7 +74,7 @@ export default class Main extends React.Component {
                     <div className='radio_container'>
                         <div className='radio_block'>
                             <form>
-                                <strong>Сортировать</strong>
+                                <strong style={{color:'turquoise'}}>Сортировать</strong>
                                 <div>
                                     <div >
                                         <input onChange={this.sortAscendingPrice} type='radio' name='sorting'></input>
@@ -94,7 +94,7 @@ export default class Main extends React.Component {
                         <hr/>
                         <div className='radio_block'>
                             <form>
-                                <strong>Фильтровать</strong>
+                                <strong style={{color:'turquoise'}}>Фильтровать</strong>
                                 <div>
                                     <div>
                                         <input onChange={this.sortTransferOne} type='radio' name='sorting'></input>
