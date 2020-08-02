@@ -1,9 +1,11 @@
 .time{
     text-align: center;
-    color: white;
 }
 .span{
     cursor: pointer;
     transition: all ease .3s;
     color: turquoise;
+}
+.localTime{
+    color: white;
 }
