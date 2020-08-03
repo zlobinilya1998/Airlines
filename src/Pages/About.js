@@ -3,6 +3,7 @@ import yellow from '../Assets/pexels-photo-4775426.jpeg'
 import air from '../Assets/hotpng.com.png'
 import './About.css'
 import sky from '../Assets/Sky.png'
+import Footer from '../Components/Footer/Footer'
 
 export default class About extends React.Component{
     render(){
@@ -30,8 +31,7 @@ export default class About extends React.Component{
                     className='ml-auto mr-auto row'
                     src={yellow}>
                 </img>
-
-                
+                <Footer/>
             </>
         )
     }

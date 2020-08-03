@@ -1,7 +1,7 @@
 import React from 'react';
 import data from '../../flights.json'
-import Ticket from '../Ticket/Ticket'
-import './App.css';
+import Ticket from './Ticket/Ticket'
+import './main.css';
 
 
 
@@ -12,6 +12,7 @@ export default class Main extends React.Component {
             flights: data.result.flights,
             x: data.result.flights,
             y: data.result.flights,
+            show: true,
         };
     }
     // Сортировка по цене
@@ -33,7 +34,11 @@ export default class Main extends React.Component {
     sortTransferZero = () => {
         this.setState({flights:this.state.x.filter(flight => flight.flight.legs[0].segments.length === 1)})
     }
-
+    toggleHandler = () => {
+        this.setState({
+            show: !this.state.show
+        })
+    }
     
 
     render(){
@@ -42,8 +47,6 @@ export default class Main extends React.Component {
             let Array = Flight.legs[0].segments[0]
             let arrivalDate = (new Date(Array.arrivalDate)).toString()
             let departureDate = (new Date(Array.departureDate)).toString() 
-            // console.log(arrivalArray.arrivalAirport.caption)
-            // console.log(typeof(arrivalArray))
 
             return (
                 <Ticket
@@ -104,6 +107,7 @@ export default class Main extends React.Component {
                                         <input onChange={this.sortTransferZero} type='radio' name='sorting'></input>
                                         <label>&nbsp;- без пересадок</label>
                                     </div>
+                                    <button onClick={this.toggleHandler} className='' style={{display:'inline-block',width:'25vh',height:'4vh',marginTop:'2vh'}} >Скрыть билеты</button>
                                 </div>
                             </form>
                         </div>

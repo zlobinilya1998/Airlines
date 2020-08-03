@@ -4,9 +4,15 @@
 .NavLink:hover{
     color: rgb(51, 221, 243) !important;
 }
+.NavLink:active{
+    color:  rgb(127, 232, 246) !important;
+}
 .brand{
     transition: all ease .6s;
 }
 .brand:hover{
     color: rgb(51, 221, 243) !important;
+}
+.brand:active{
+    color:  rgb(127, 232, 246) !important;
 }
