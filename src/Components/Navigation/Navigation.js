@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
 import { Navbar, Container, Nav} from 'react-bootstrap'
-import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import './Navigation.css'
 
 import Main from '../main/main.js'
 import About from '../../Pages/About'
+import Error from '../../Pages/404/404'
 
 
 
@@ -33,7 +34,7 @@ export default class Header extends Component {
                 <Switch>
                     <Route exact path='/home' component={About}/>
                     <Route exact path='/ticket' component={Main}/>
-                    <Redirect to='/home'/>
+                    <Route component={Error} />           
                 </Switch>
             </Router>
             </>

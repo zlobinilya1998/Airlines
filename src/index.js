@@ -9,7 +9,6 @@ import Navigation from './Components/Navigation/Navigation'
 ReactDOM.render(
   <>
     <Navigation/>
-
   </>,
   document.getElementById('root')
 );
