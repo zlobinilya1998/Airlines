@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Navbar, Container, Nav} from 'react-bootstrap'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
 import './Navigation.css'
 
 import Main from '../main/main.js'
@@ -33,7 +33,7 @@ export default class Header extends Component {
                 <Switch>
                     <Route exact path='/home' component={About}/>
                     <Route exact path='/ticket' component={Main}/>
-                    <Route render={() => <h1 style={{color:'red',textAlign:'center',marginTop:'30vh'}}>Ошибка 404,страница не найдена.</h1>}/>
+                    <Redirect to='/home'/>
                 </Switch>
             </Router>
             </>

@@ -17,9 +17,10 @@ export default class About extends React.Component{
                     src={air}>
                     </img>
                     <h1 
-                    className='w-50 text'>
+                     className='text w-50'>
                         Более <span style={{color:'turquoise',borderBottom:'2px solid gray'}}>300 направлений</span>, прямые агенты авиакомпаний и официальные агенты
                     </h1>
+
                 </div>
 
                 <h2 

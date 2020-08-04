@@ -107,7 +107,6 @@ export default class Main extends React.Component {
                                         <input onChange={this.sortTransferZero} type='radio' name='sorting'></input>
                                         <label>&nbsp;- без пересадок</label>
                                     </div>
-                                    <button onClick={this.toggleHandler} className='' style={{display:'inline-block',width:'25vh',height:'4vh',marginTop:'2vh'}} >Скрыть билеты</button>
                                 </div>
                             </form>
                         </div>
