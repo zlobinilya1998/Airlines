@@ -25,7 +25,9 @@ export default class Clock extends React.Component{
     render(){
       return (
         <div className='time'>
-          <h2 className='d-flex justify-content-end localTime' style={{fontSize:'1rem',marginRight:'1vh'}}>Локальное время&nbsp;<span className='span'>{this.state.date}</span></h2>
+          <h2 className='d-flex justify-content-end localTime'>
+            Локальное время&nbsp;<span className='span'>{this.state.date}</span>
+          </h2>
         </div>
       );
     }
