@@ -1,0 +1,16 @@
+.error{
+    display:flex;
+    flex-direction:column;
+}
+.error_p{
+    color: red;
+    text-align: center;
+    margin-top: 35vh;
+    font-size: 2.5rem;
+    transition: all ease 1s;
+}
+.hr{
+    height: .2vh;
+    width: 100%;
+    margin: 0;
+}

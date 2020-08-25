@@ -1,3 +1,6 @@
+.Navbar{
+    border-top: 2.5px,rgb(51, 221, 243) !important,solid;
+}
 .NavLink{
     transition: all ease .6s;
 }

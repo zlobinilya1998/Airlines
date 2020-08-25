@@ -1,9 +1,9 @@
 import React from 'react'
-import yellow from '../Assets/pexels-photo-4775426.jpeg' 
-import air from '../Assets/hotpng.com.png'
+import yellow from '../../Assets/pexels-photo-4775426.jpeg' 
+import air from '../../Assets/hotpng.com.png'
 import './About.css'
-import sky from '../Assets/Sky.png'
-import Footer from '../Components/Footer/Footer'
+import sky from '../../Assets/Sky.png'
+import Footer from '../../Components/Footer/Footer'
 
 export default class About extends React.Component{
     render(){

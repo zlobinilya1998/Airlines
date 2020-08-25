@@ -1,19 +1,18 @@
 import React from 'react'
+import './404.css'
+import './style.scss'
 
 export default class Error404 extends React.Component{
     render(){
         return(
-            <div style={{display:'flex',flexDirection:'column'}}>
-                <p style={{
-                color:'red',
-                textAlign:'center',
-                marginTop:'35vh',
-                fontSize:'2.5rem'}}
-                >
+            <>
+            <div className='error'>
+                <p className='error_p'>
                 Ошибка 404. Страница не найдена
                 </p>
-                <hr style={{height:'.2vh',width:'100%',margin:'0'}} />
+                <hr className='hr'/>
             </div>
+            </>
         )
     }
 } 

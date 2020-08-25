@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import './Navigation.css'
 
 import Main from '../main/main.js'
-import About from '../../Pages/About'
+import About from '../../Pages/About/About'
 import Error from '../../Pages/404/404'
 
 
@@ -14,7 +14,7 @@ export default class Header extends Component {
     render(){
         return(
             <>
-            <Navbar collapseOnSelect expand='md' bg='dark' variant='dark' sticky="top">
+            <Navbar className='Navbar' collapseOnSelect expand='md' bg='dark' variant='dark' sticky="top">
                 <Container>
                     <Navbar.Brand className='brand' href='/home'>
                         <svg width="1em" height="1em" viewBox="0 0 16 16" className="bi bi-cloud" fill="currentColor" xmlns="http://www.w3.org/2000/svg">

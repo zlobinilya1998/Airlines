@@ -34,19 +34,20 @@ export default class Main extends React.Component {
     sortTransferZero = () => {
         this.setState({flights:this.state.x.filter(flight => flight.flight.legs[0].segments.length === 1)})
     }
-    toggleHandler = () => {
-        this.setState({
-            show: !this.state.show
-        })
-    }
     
 
     render(){
         let flightsList = this.state.flights.map((flightElement,index) =>{
             let Flight = flightElement.flight
             let Array = Flight.legs[0].segments[0]
+            let ArrayReturn = Flight.legs[1].segments[0]
             let arrivalDate = (new Date(Array.arrivalDate)).toString()
             let departureDate = (new Date(Array.departureDate)).toString() 
+            let arrivalDateReturn = (new Date(ArrayReturn.arrivalDate)).toString()
+            let departureDateReturn = (new Date(ArrayReturn.departureDate)).toString()
+            console.log(arrivalDateReturn);
+
+
 
             return (
                 <Ticket
@@ -54,20 +55,37 @@ export default class Main extends React.Component {
                 // 
                 price={Flight.price.total.amount}
                 duration={Flight.legs[0].duration}
+                returnTime={Flight.legs[1].duration}
+
+                // Служба перевозки
+                carrier={flightElement.flight.carrier.caption}
+                // Пересадка
+                obj={Flight.legs[0].segments}       
+                // Туда
+
                 // Отправление
                 departureCity={Array.departureCity.caption}
                 departureDate={departureDate}
                 departureAirport={Array.departureAirport.caption}
                 departureAirportUid={Array.departureAirport.uid}
-                // Служба перевозки
-                carrier={flightElement.flight.carrier.caption}
-                // Пересадка
-                obj={Flight.legs[0].segments}       
                 // Прибытие
                 arrivalCity={Array.arrivalCity.caption} 
                 arrivalDate={arrivalDate}
                 arrivalAirport={Array.arrivalAirport.caption}
-                arrivalAirportUid={Array.arrivalAirport.uid}        
+                arrivalAirportUid={Array.arrivalAirport.uid}      
+                
+                // Обратный маршрут
+
+
+                // Отправление
+                departureDateReturn={departureDateReturn}
+                departureAirportReturn={ArrayReturn.departureAirport.caption}
+
+                // Прибытие
+                arrivalDateReturn={arrivalDateReturn}
+
+
+                
                 />    
             )
         })
