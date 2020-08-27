@@ -5,10 +5,10 @@
   .radio_container{
     background-color: #343a40;
     display: inline-block;
-    height: max-content;
     width: 20%;
     color: white;
     padding-bottom: 2vh;
+    min-width: 275px;
   }
   .radio_block{
     margin-top: .5rem;
@@ -17,4 +17,16 @@
   }
   .radio_block label{
     margin-top: 5px;
+  }
+
+  @media (max-width:425px){
+    .radio_container{
+      width: 100%;
+    }
+    .radio_block{
+      margin-top: .5rem;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
   }

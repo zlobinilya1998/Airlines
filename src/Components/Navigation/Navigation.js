@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import './Navigation.css'
 
 import Main from '../main/main.js'
-import About from '../../Pages/About/About'
+import Home from '../../Pages/About/About'
 import Error from '../../Pages/404/404'
 
 
@@ -32,9 +32,10 @@ export default class Header extends Component {
             
             <Router>
                 <Switch>
-                    <Route exact path='/home' component={About}/>
+                    <Route exact path='/home' component={Home}/>
                     <Route exact path='/ticket' component={Main}/>
-                    <Route component={Error} />           
+                    <Route exact path='/' component={Home} />    
+                    <Route component={Error}/>       
                 </Switch>
             </Router>
             </>

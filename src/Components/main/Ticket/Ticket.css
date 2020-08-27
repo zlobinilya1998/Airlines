@@ -2,9 +2,12 @@
     transition: all ease .2s;
     margin: 6vh;
     background-color: whitesmoke;
-    width: 800px;
+    width: 50%;
     border: solid 3px silver;
     cursor: pointer !important;
+    min-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
 }
     .main:hover{
         outline: turquoise 3px solid;
@@ -51,14 +54,14 @@
 .price{
     color: rgb(9, 255, 0);
     font-size: larger;
-    width: 98vh;
     text-align: end;
+    margin-right: 1vh;
 }
 .passenger{ 
     color: white;
     font-size: small;
-    width: 98vh;
     text-align: end;
+    margin-right: 1vh;
 }
 hr{
     background-color: black;
@@ -107,6 +110,28 @@ hr{
 p {
     margin: 0;
 }
-.span{
+.spanTicket{
     color: blue !important;
+}
+
+
+
+@media (max-width:425px){
+    .route{
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .price{
+        text-align: center;
+    }
+    .passenger{
+        text-align: center;
+        margin-left: 0vh;
+    }
+    .transfer:before{
+        display: none;
+    }
+    .transfer::after{
+        display: none;
+    }
 }

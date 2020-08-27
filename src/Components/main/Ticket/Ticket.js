@@ -75,7 +75,7 @@ function Ticket(props){
                         </p>
                     </div>
                     <p className="route">
-                        {departuredCityCaption},{departureAirportCaption}<span className='span'> ({departuredAirportUid}) &#8594;</span>{arrivalAirportCaption}<span className='span'> ({arrivalUid})</span>
+                        {departuredCityCaption},{departureAirportCaption}<span className='spanTicket'> ({departuredAirportUid}) &#8594;</span>{arrivalAirportCaption}<span className='spanTicket'> ({arrivalUid})</span>
                     </p>
                     <div className='time'>
                         <div className="time_block">

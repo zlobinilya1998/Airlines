@@ -1,7 +1,7 @@
 .time{
     text-align: center;
 }
-.span{
+.spanFooter{
     cursor: pointer;
     transition: all ease .3s;
     color: turquoise;

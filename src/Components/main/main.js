@@ -54,7 +54,7 @@ export default class Main extends React.Component {
                 sortTransferOne = {this.sortTransferOne}
                 sortTransferZero = {this.sortTransferZero}
                 />
-                <div className=''>{Tickets}</div>
+                <div>{Tickets}</div>
             </>
         )
     }
