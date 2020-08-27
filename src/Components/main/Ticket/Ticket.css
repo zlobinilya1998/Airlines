@@ -7,7 +7,7 @@
     cursor: pointer !important;
 }
     .main:hover{
-        outline: rgb(108, 243, 153) 3px solid;
+        outline: turquoise 3px solid;
     }   
 
 .main_block{
@@ -96,7 +96,8 @@ hr{
         top: 50%;
     }
 .carrier{
-    margin-left: 5vh;
+    margin-top: 5vh;
+    text-align: center;
 }
 .footer{
     height: 60px;
@@ -105,4 +106,7 @@ hr{
 }
 p {
     margin: 0;
+}
+.span{
+    color: blue !important;
 }
