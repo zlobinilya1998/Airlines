@@ -1,7 +1,7 @@
 import React from 'react';
 import data from '../../flights.json'
 import Ticket from './Ticket/Ticket'
-import './main.css';
+import Sort from './Sort/Sort'
 
 
 
@@ -16,7 +16,6 @@ export default class Main extends React.Component {
         };
     }
     // Сортировка по цене
-
     sortAscendingPrice = () =>{
         this.setState({flights:[...this.state.flights].sort((a,b)=>a.flight.price.total.amount-b.flight.price.total.amount)})
     }
@@ -37,59 +36,42 @@ export default class Main extends React.Component {
     
 
     render(){
-        let flightsList = this.state.flights.map((flightElement,index) =>{
+        let Tickets = this.state.flights.map((flightElement,index) =>{
             let flight = flightElement.flight
             return (
                 <Ticket
                 key = {index}
                 flight = {flight}
-                pop = {() => this.sortAscendingPrice}
                 />    
             )
         })
         return(
             <>  
-                <div className='radio'>
-                    <div className='radio_container'>
-                        <div className='radio_block'>
-                            <form>
-                                <strong style={{color:'turquoise'}}>Сортировать</strong>
-                                <div>
-                                    <div >
-                                        <input onChange={this.sortAscendingPrice} type='radio' name='sorting'></input>
-                                        <label> &nbsp;- по возрастанию цены</label>
-                                    </div>
-                                    <div>
-                                        <input onChange={this.sortDescendingPrice} type='radio' name='sorting'></input>
-                                        <label>&nbsp;- по убыванию цены</label>
-                                    </div>
-                                    <div>
-                                        <input onChange={this.sortAscendingTime} type='radio' name='sorting'></input>
-                                        <label>&nbsp;- по времени в пути</label>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <hr/>
-                        <div className='radio_block'>
-                            <form>
-                                <strong style={{color:'turquoise'}}>Фильтровать</strong>
-                                <div>
-                                    <div>
-                                        <input onChange={this.sortTransferOne} type='radio' name='sorting'></input>
-                                        <label>&nbsp;- одна пересадка</label>
-                                    </div>
-                                    <div>
-                                        <input onChange={this.sortTransferZero} type='radio' name='sorting'></input>
-                                        <label>&nbsp;- без пересадок</label>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div className='flightsList'>{flightsList}</div>
-                </div>
+                <Sort
+                sortAscendingPrice = {this.sortAscendingPrice}
+                sortDescendingPrice = {this.sortDescendingPrice}
+                sortAscendingTime = {this.sortAscendingTime}
+                sortTransferOne = {this.sortTransferOne}
+                sortTransferZero = {this.sortTransferZero}
+                />
+                <div className=''>{Tickets}</div>
             </>
         )
     }
 }
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+

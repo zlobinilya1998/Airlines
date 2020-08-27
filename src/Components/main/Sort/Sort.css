@@ -1,0 +1,20 @@
+.radio{
+    display: flex;
+    flex-direction: row;
+  }
+  .radio_container{
+    background-color: #343a40;
+    display: inline-block;
+    height: max-content;
+    width: 20%;
+    color: white;
+    padding-bottom: 2vh;
+  }
+  .radio_block{
+    margin-top: .5rem;
+    margin-left: 3.8rem;
+    padding-top: .2rem;
+  }
+  .radio_block label{
+    margin-top: 5px;
+  }
