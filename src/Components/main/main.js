@@ -2,6 +2,8 @@ import React from 'react';
 import data from '../../flights.json'
 import Ticket from './Ticket/Ticket'
 import Sort from './Sort/Sort'
+import TicketBack from './Ticket/TicketBack';
+import './main.css'
 
 
 
@@ -36,25 +38,27 @@ export default class Main extends React.Component {
     
 
     render(){
-        let Tickets = this.state.flights.map((flightElement,index) =>{
-            let flight = flightElement.flight
+        let Tickets = this.state.flights.map((ticket,index) =>{
+            let flight = ticket.flight
             return (
-                <Ticket
-                key = {index}
-                flight = {flight}
-                />    
-            )
-        })
+            <div className='ticket' key={index}>
+                <Ticket 
+                flight = {flight}/>    
+                <TicketBack 
+                flight = {flight}/>
+            </div>
+        )})
         return(
-            <>  
-                <Sort
+            <>                  
+                {Tickets}
+                {/* <Sort
                 sortAscendingPrice = {this.sortAscendingPrice}
                 sortDescendingPrice = {this.sortDescendingPrice}
                 sortAscendingTime = {this.sortAscendingTime}
                 sortTransferOne = {this.sortTransferOne}
                 sortTransferZero = {this.sortTransferZero}
-                />
-                <div>{Tickets}</div>
+                /> */}
+
             </>
         )
     }

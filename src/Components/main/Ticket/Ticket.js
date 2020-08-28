@@ -7,9 +7,7 @@ function Ticket(props){
     let flight = props.flight.legs[0].segments[0]
 
             
-    // let DepartureInfo= props.flight.legs[0].segments[0]
-    // let DepartureInfoBack = props.flight.legs[1].segments[0]
-    // let arrivalInfoBack = props.flight.legs[1].segments[props.flight.legs[1].segments.length-1]
+
 
 
 
@@ -29,7 +27,7 @@ function Ticket(props){
         let arrivalDayDate = arrivalDate1.toLocaleDateString([],{month:'long',day:'2-digit'})
 
 
-        // ВРЕМЯ ПРИБЫТИЯ
+        
           
 
 
@@ -56,12 +54,12 @@ function Ticket(props){
     // Пересадка
     let transfer = props.flight.legs[0].segments
     // Перевозчик
-    let carrier = props.flight.carrier.caption
+
     // Цена
     let price = props.flight.price.total.amount
 
 
-
+  
 
         return(
             <>
@@ -121,14 +119,6 @@ function Ticket(props){
                         </span>
                         </h1>
                     }
-                    
-                    <p className='carrier'>
-                        Рейс выполняет : <strong>{carrier}</strong>
-                    </p>
-                    <hr style={{height:'.1px'}}/>
-                    <button className='main_btn'>
-                        Выбрать
-                    </button>
                 </div>
             </>
         )

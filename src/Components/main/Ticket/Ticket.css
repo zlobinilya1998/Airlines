@@ -1,34 +1,11 @@
 .main{
-    transition: all ease .2s;
-    margin: 6vh;
-    background-color: whitesmoke;
-    width: 50%;
-    border: solid 3px silver;
-    cursor: pointer !important;
     min-width: 320px;
-    margin-left: auto;
-    margin-right: auto;
 }
-    .main:hover{
-        outline: turquoise 3px solid;
-    }   
-
 .main_block{
     background-color: white;
     width: 100%;
     height: 400px;
 }
-    .main_btn{
-        width: 100%;
-        position: relative;
-        height: 2rem;
-        background-color: #ffc354;
-        transition: all ease 1s;
-    }
-    .main_btn:hover{
-        color: white;    
-        background-color: #f3a310; 
-    }
 .time{
     width:100%;
     display:flex;
@@ -53,7 +30,6 @@
     
 .price{
     color: rgb(9, 255, 0);
-    font-size: larger;
     text-align: end;
     margin-right: 1vh;
 }
@@ -62,9 +38,6 @@
     font-size: small;
     text-align: end;
     margin-right: 1vh;
-}
-hr{
-    background-color: black;
 }
 .route{
     text-align:center;
@@ -98,10 +71,6 @@ hr{
         right: 0;
         top: 50%;
     }
-.carrier{
-    margin-top: 5vh;
-    text-align: center;
-}
 .footer{
     height: 60px;
     width: 100%;
@@ -133,5 +102,10 @@ p {
     }
     .transfer::after{
         display: none;
+    }
+    .main{
+        margin-top: 10px !important;
+        margin: 0;
+        width: 100%;
     }
 }

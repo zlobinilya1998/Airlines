@@ -1,47 +1,75 @@
 import React from 'react'
-import './Ticket.css'
+import './TicketBack.css'
+
+
+function TicketBack(props){
+    let flight = props.flight.legs[1].segments[0]
+    
+    let arrivalInfo = props.flight.legs[1].segments[props.flight.legs[1].segments.length-1] 
+    let departureInfo = flight
+    let departureAirport = departureInfo.departureAirport.caption
+    let departuredAirportUid = departureInfo.departureAirport.uid
+
+        // Время
+        // Отправление
+        let departureDate = (new Date(flight.departureDate))
+        let departureTimeDate = departureDate.toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'})
+        let departureDayDate = departureDate.toLocaleDateString([],{month:'long',day:'2-digit'})
+        
+        
+        
+        
+        // Прибытие
+        let pribitie = props.flight.legs[1].segments[props.flight.legs[1].segments.length-1].arrivalDate
+        let arrivalDate1 = (new Date(pribitie))
+        let arrivalTimeDate = arrivalDate1.toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'})
+        let arrivalDayDate = arrivalDate1.toLocaleDateString([],{month:'long',day:'2-digit'})
+        
+
+        let arrivalCity = arrivalInfo.arrivalCity.caption
+
+
+        // Перевозчик
+        let carrier = props.flight.carrier.caption
 
 
 
-function Ticket1(props){
-    let flight = props.flight.legs[0].segments[0]
-    // Аэропорт отправления
-    let arrivalAirport = props.arrivalInfo.arrivalAirport.caption
-    let arrivalUid = props.arrivalInfo.arrivalAirport.uid
-    let arrivalCityCaption = flight.departureCity.caption
+        // // Аэропорт отправления
+        // let departuredCityCaption = flight.departureCity.caption
+        // let departureAirportCaption = flight.departureAirport.caption
+        // let departuredAirportUid = flight.departureAirport.uid
+        // // Аэропорт прибытия
 
-
-    // Цена
-    let price = props.price
-
+        // let DepartureInfoBack = props.flight.legs[1].segments[0]
+        // let arrivalInfoBack = props.flight.legs[1].segments[props.flight.legs[1].segments.length-1]
 
 
 
-        return(
-            <>
-                <div className='main'>
-                    <div className="footer">
-                        <div className='price'>
-                            {price} &#8381;
-                        </div>
-                        <p className='passenger'>
-                            Стоимость для одного взрослого пассажира
-                        </p>
-                    </div>
-                    <p className="route">
-                    {arrivalCityCaption},
-                    {flight.departureAirport.caption}<span className='span'> ({flight.departureAirport.uid}) &#8594;</span>{arrivalAirport}<span className='span'> ({arrivalUid})</span>
+
+
+
+
+        let arrivalAirportCaption = arrivalInfo.arrivalAirport.caption
+        let arrivalUid = arrivalInfo.arrivalAirport.uid
+        let duration = props.flight.legs[1].duration
+
+
+    return(
+        <>
+        <div className='main'>
+        <p className="route">
+            {departureAirport}<span className='spanTicket'> ({departuredAirportUid}) &#8594; </span>{arrivalCity},{arrivalAirportCaption}<span className='spanTicket'> ({arrivalUid})</span>
                     </p>
                     <div className='time'>
                         <div className="time_block">
                             <div>
                                 <strong>
-                                    {props.departureTimeDate}
+                                    {departureTimeDate} 
                                 </strong>
                             </div>
                             <div>
                                 <span>
-                                    {props.departureDayDate}  
+                                    {departureDayDate}
                                 </span>
                             </div>  
                         </div>
@@ -51,45 +79,34 @@ function Ticket1(props){
                                     &#8986;
                                 </span>
                                 <strong>
-                                    {Math.floor(props.duration/60)} ч {props.duration % 60} мин
+                                    {Math.floor(duration/60)} ч {duration % 60} мин
                                 </strong>
                             </div>
                         </div>
                         <div className="time_block">
                             <div>
                                 <span>
-                                    {props.arrivalDayDate}
+                                  {arrivalDayDate}  
                                 </span>
                             </div>  
                             <div>
                                 <strong>
-                                    {props.arrivalTimeDate}
+                                  {arrivalTimeDate}  
                                 </strong>
                             </div>
                         </div>
                     </div>
-
-                    {props.obj.length-1 > 0 &&
-                        <h1 className='transfer'>
-                        <span>
-                            {props.obj.length-1 + ' Пересадка'}
-                        </span>
-                        </h1>
-                    }
-                    
                     <p className='carrier'>
-                        Рейс выполняет : <strong>{props.carrier}</strong>
+                        Рейс выполняет : <strong>
+                            {carrier}
+                            </strong>
                     </p>
-                    <hr style={{height:'.1px'}}/>
-
-                    
-            
                     <button className='main_btn'>
                         Выбрать
                     </button>
                 </div>
             </>
-        )
-    }
-export default Ticket1
-    
+    )
+}
+
+export default TicketBack
