@@ -9,6 +9,7 @@
     color: white;
     padding-bottom: 2vh;
     min-width: 275px;
+    position: fixed;
   }
   .radio_block{
     margin-top: .5rem;
@@ -22,6 +23,7 @@
   @media (max-width:768px){
     .radio_container{
       width: 100%;
+      position: relative;
     }
     .radio_block{
       margin-top: .5rem;

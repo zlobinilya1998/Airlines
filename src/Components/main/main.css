@@ -3,7 +3,7 @@
     min-width: 320px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 3vh;
+    margin-top: 1vh;
     border: solid 3px silver;
     background-color: whitesmoke;
     transition: all ease .1s;
@@ -15,8 +15,14 @@
 
 @media (max-width:768px){
     .ticket{
-        width: 100%;
+        width: 100% !important;
         border: none;
         margin-top: 2vh;
+    }
+}
+@media (max-width:1024px){
+    .ticket{
+        margin-right: 0;
+        width: 62%;
     }
 }

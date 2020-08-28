@@ -1,8 +1,8 @@
 import React from 'react';
 import data from '../../flights.json'
-import Ticket from './Ticket/Ticket'
-import Sort from './Sort/Sort'
-import TicketBack from './Ticket/TicketBack';
+import Ticket from '../Ticket/Ticket'
+import Sorting from '../Sorting/Sorting'
+import TicketBack from '../Ticket/TicketBack';
 import './main.css'
 
 
@@ -50,7 +50,7 @@ export default class Main extends React.Component {
         )})
         return(
             <>     
-                <Sort
+                <Sorting
                 sortAscendingPrice = {this.sortAscendingPrice}
                 sortDescendingPrice = {this.sortDescendingPrice}
                 sortAscendingTime = {this.sortAscendingTime}

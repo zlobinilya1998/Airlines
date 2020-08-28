@@ -3,7 +3,7 @@ import { Navbar, Container, Nav} from 'react-bootstrap'
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import './Navigation.css'
 
-import Main from '../main/main.js'
+import Main from '../Main/main'
 import Home from '../../Pages/About/About'
 import Error from '../../Pages/404/404'
 
