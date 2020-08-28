@@ -5,35 +5,21 @@ import './About.css'
 import sky from '../../Assets/Sky.png'
 import Footer from '../../Components/Footer/Footer'
 
-export default class About extends React.Component{
-    render(){
-        return(
-            <>  
-                <img alt='sky' className="w-100" style={{height:'25vh'}} src={sky}/>
-                <div className='air d-flex' >
-                    <img
-                    alt='air' 
-                    className='w-50' 
-                    src={air}>
-                    </img>
-                    <h1 
-                     className='text w-50'>
-                        Более <span style={{color:'turquoise',borderBottom:'2px solid gray'}}>300 направлений</span>, прямые агенты авиакомпаний и официальные агенты
-                    </h1>
-
-                </div>
-
-                <h2 
-                    className='work text'>
-                        Стаж работы ключевых сотрудников в среднем составляет <span style={{color:'turquoise',borderBottom:'2px solid gray'}}>15 лет</span>
-                </h2>
-                <img 
-                    alt='yellow'
-                    className='ml-auto mr-auto row'
-                    src={yellow}>
-                </img>
-                <Footer/>
-            </>
-        )
-    }
+export default function About(){
+    return(
+        <>  
+            <div className='content'>
+            <img alt='sky' className="sky" src={sky}/>
+            <h1 className='first text '>
+                Более <span className='year'>300 направлений</span>, прямые агенты авиакомпаний и официальные агенты
+            </h1>
+            <img alt='flight' className='flight' src={air}/>
+            <h2 className='second text'>
+                Стаж работы ключевых сотрудников в среднем составляет <span className='year'>15 лет</span>
+            </h2>
+            <img alt='yellow' className='img_about'src={yellow}/>
+            <Footer/>
+            </div>
+        </>
+    )
 }

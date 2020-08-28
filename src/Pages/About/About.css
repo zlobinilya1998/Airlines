@@ -1,17 +1,80 @@
+
+.first{
+    width: 50%;
+}
+
 .text{
     font-Size:1.7rem;
     text-Align:center;
-    margin-Top:10vh;
     margin-Bottom:auto;
-    color:rgb(255, 255, 255);
+    color:rgb(97, 250, 230);
     text-Shadow: #474747 1px 2px;
     pointer-events: none;
-    /* text-Shadow: 2px 2px 3px rgba(255,255,255,0.1); */
 }
-.air{
-    height: 60vh;
-    margin-top: 10vh;
+
+.img_about{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: auto;
 }
-.work{
-    margin-top: 20vh;
+.sky{
+    height: 30vh;
+    width: 100%;
+}
+.year{
+    color: rgb(238, 182, 79);
+}
+.flight{
+    width: 50%;
+
+}
+@media (max-width:1024px){
+    .first{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .flight{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-top: 5%;
+    }
+}
+@media (max-width:768px){
+    .first{
+        width: 95%;
+    }
+    .second{
+        width: 95%;
+    }
+}
+@media (max-width:520px){
+    .first{
+        width: 95%;
+        margin-top: 5%;
+    }
+    .text{
+        font-size: 1.1rem;
+    }
+    .img_about{
+        width: 50%;
+        height: 50%;
+    }
+    .air{
+        flex-direction: column;
+        margin-top: 0 !important;
+    }
+    .sky{
+        display: none;
+    }
+    .flight{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 60% !important;
+        height: 50%;
+    }
+    
 }

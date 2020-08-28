@@ -1,12 +1,3 @@
-
-@mixin sexy-border() {
-    border-bottom: {
-      color: rgb(71, 249, 255);
-      width: 2.5px;
-      style: solid;
-    }
-  }
-
 .img{
     width: 30px;
     height: 30px;
@@ -17,9 +8,11 @@
     opacity: 0.8;
 }
 .footer{
-    @include sexy-border;
     height:7.5vh;
     background-Color:#343a40;
-    position: bottom,
+    border-bottom:  rgb(71, 249, 255) .4vh solid;
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 

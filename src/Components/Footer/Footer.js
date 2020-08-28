@@ -1,12 +1,12 @@
 import React from 'react'
 import Time from './Time/Time'
-import './Footer.scss'
+import './Footer.css'
 
 
 export default class Footer extends React.Component{
     render(){
         return(
-            <div className='w-100 d-flex footer align-items-center' >
+            <div className='footer' >
                 <Time/>
             </div>
         )
