@@ -1,12 +1,22 @@
 .ticket{
-    display: block;
-    width: 600px;
+    width: 50%;
+    min-width: 320px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 3vh;
     border: solid 3px silver;
-    transition: all ease .1s;
     background-color: whitesmoke;
+    transition: all ease .1s;
+    cursor: pointer;
 }
 .ticket:hover{
     outline: turquoise 3px solid;
+}
+
+@media (max-width:768px){
+    .ticket{
+        width: 100%;
+        border: none;
+        margin-top: 2vh;
+    }
 }

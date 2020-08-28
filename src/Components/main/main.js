@@ -49,16 +49,15 @@ export default class Main extends React.Component {
             </div>
         )})
         return(
-            <>                  
-                {Tickets}
-                {/* <Sort
+            <>     
+                <Sort
                 sortAscendingPrice = {this.sortAscendingPrice}
                 sortDescendingPrice = {this.sortDescendingPrice}
                 sortAscendingTime = {this.sortAscendingTime}
                 sortTransferOne = {this.sortTransferOne}
                 sortTransferZero = {this.sortTransferZero}
-                /> */}
-
+                />
+                {Tickets}
             </>
         )
     }
