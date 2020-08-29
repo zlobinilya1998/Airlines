@@ -1,21 +1,21 @@
 import React from 'react'
 import './Ticket.css'
 
-function Ticket(props){
-    let flight = props.flight.legs[0].segments[0]
-    let arrivalInfo = props.flight.legs[0].segments[props.flight.legs[0].segments.length-1] 
+function Ticket({flight}){
+    let departureInfo = flight.legs[0].segments[0]
+    let arrivalInfo = flight.legs[0].segments[flight.legs[0].segments.length-1] 
     // Отправление
         // Дата
-            let departureDate = (new Date(flight.departureDate))
+            let departureDate = (new Date(departureInfo.departureDate))
             let departureTimeDate = departureDate.toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'})
             let departureDayDate = departureDate.toLocaleDateString([],{month:'long',day:'2-digit'})
         // Аэропорт
-            let departuredCityCaption = flight.departureCity.caption
-            let departureAirportCaption = flight.departureAirport.caption
-            let departuredAirportUid = flight.departureAirport.uid
+            let departuredCityCaption = departureInfo.departureCity.caption
+            let departureAirportCaption = departureInfo.departureAirport.caption
+            let departuredAirportUid = departureInfo.departureAirport.uid
     // Прибытие
         // Дата
-            let arrival = props.flight.legs[0].segments[props.flight.legs[0].segments.length-1].arrivalDate
+            let arrival = flight.legs[0].segments[flight.legs[0].segments.length-1].arrivalDate
             let arrivalDate1 = (new Date(arrival))
             let arrivalTimeDate = arrivalDate1.toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'})
             let arrivalDayDate = arrivalDate1.toLocaleDateString([],{month:'long',day:'2-digit'})
@@ -23,15 +23,15 @@ function Ticket(props){
             let arrivalAirportCaption = arrivalInfo.arrivalAirport.caption
             let arrivalUid = arrivalInfo.arrivalAirport.uid
     // Полное время маршрута
-            let duration = props.flight.legs[0].duration
+            let duration = flight.legs[0].duration
     // Пересадка
-            let transfer = props.flight.legs[0].segments
+            let transfer = flight.legs[0].segments
     // Цена
-            let price = props.flight.price.total.amount
+            let price = flight.price.total.amount
 
     return(
         <div className='main'>
-            <div className="footer">
+            <div className="footerTicket">
                 <div className='price'>
                     {price} &#8381;
                 </div>

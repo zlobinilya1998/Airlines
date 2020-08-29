@@ -13,14 +13,15 @@
     outline: turquoise 3px solid;
 }
 
-@media (max-width:768px){
+@media (max-width:911px){
     .ticket{
-        width: 100% !important;
-        border: none;
+        width: 90% !important;
         margin-top: 2vh;
+        margin-left: auto;
+        margin-right: auto !important;
     }
 }
-@media (max-width:1024px){
+@media (max-width:1125px){
     .ticket{
         margin-right: 0;
         width: 62%;

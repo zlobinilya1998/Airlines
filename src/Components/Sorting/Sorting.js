@@ -25,7 +25,7 @@ function Sort(props){
                             </div>
                         </form>
                     </div>
-                    <hr/>
+                    <hr style={{borderBottom:`2px solid #000`}}/>
                     <div className='radio_block'>
                         <form>
                             <strong style={{color:'turquoise'}}>Фильтровать</strong>

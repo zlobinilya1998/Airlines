@@ -14,7 +14,7 @@ export default function Main(){
     let y = data.result.flights
 
     
-    // Сортировка по цене1
+    // Сортировка по цене
     let sortAscendingPrice = () =>{
         SetFlights([...flights].sort((a,b)=>a.flight.price.total.amount-b.flight.price.total.amount))
     }

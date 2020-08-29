@@ -63,10 +63,10 @@
         right: 0;
         top: 50%;
     }
-.footer{
+.footerTicket{
     height: 60px;
     width: 100%;
-    background-color: rgb(13, 122, 195);
+    background-color: #343a40;
 }
 p {
     margin: 0;

@@ -20,7 +20,7 @@
     margin-top: 5px;
   }
 
-  @media (max-width:768px){
+  @media (max-width:911px){
     .radio_container{
       width: 100%;
       position: relative;

@@ -24,7 +24,7 @@ export default class Header extends Component {
                     <Navbar.Toggle aria-controls='responsive-navbar-nav'/>
                     <Navbar.Collapse>
                         <Nav className='mr-auto'>
-                            <Nav.Link className='NavLink' href='/ticket'>Билеты</Nav.Link> 
+                            <Nav.Link className='NavLink' href='/ticket'>Авиабилеты</Nav.Link> 
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
