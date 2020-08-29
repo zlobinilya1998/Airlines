@@ -1,13 +1,9 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import { Nav} from 'react-bootstrap'
-
-
-
-import Home from '../../Pages/About/About'
-
-
 import './404.css'
+
+import Home from '../About/About'
 
 export default function Error404(){
     return(

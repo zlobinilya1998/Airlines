@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import './Navigation.css'
 
 import Main from '../Main/main'
-import Home from '../../Pages/About/About'
-import Error from '../../Pages/404/404'
+import Home from '../About/About.js'
+import Error from '../404/404.js'
 
 
 
