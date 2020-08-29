@@ -10,4 +10,5 @@
     color: white;
     font-Size:1rem;
     margin-Right:1vh;
+    display: flex;
 }

@@ -1,14 +1,12 @@
 import React from 'react'
-import Time from './Time/Time'
+import Time from './Time/Time.jsx'
 import './Footer.css'
 
 
-export default class Footer extends React.Component{
-    render(){
+export default function Footer(){
         return(
             <div className='footer' >
                 <Time/>
             </div>
         )
     }
-}

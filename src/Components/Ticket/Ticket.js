@@ -4,6 +4,7 @@ import './Ticket.css'
 function Ticket(props){
     let flight = props.flight.legs[0].segments[0]
     let arrivalInfo = props.flight.legs[0].segments[props.flight.legs[0].segments.length-1] 
+    console.log(props);
     // Отправление
         // Дата
             let departureDate = (new Date(flight.departureDate))
