@@ -4,7 +4,6 @@ import './Ticket.css'
 function Ticket(props){
     let flight = props.flight.legs[0].segments[0]
     let arrivalInfo = props.flight.legs[0].segments[props.flight.legs[0].segments.length-1] 
-    console.log(props);
     // Отправление
         // Дата
             let departureDate = (new Date(flight.departureDate))
@@ -31,63 +30,65 @@ function Ticket(props){
             let price = props.flight.price.total.amount
 
     return(
-            <div className='main'>
-                <div className="footer">
-                    <div className='price'>
-                        {price} &#8381;
-                    </div>
-                    <p className='passenger'>
-                        Стоимость для одного взрослого пассажира
-                    </p>
+        <div className='main'>
+            <div className="footer">
+                <div className='price'>
+                    {price} &#8381;
                 </div>
-                <p className="route">
-                    {departuredCityCaption}, {departureAirportCaption}<span className='spanTicket'> ({departuredAirportUid}) &#8594;</span>{arrivalAirportCaption}<span className='spanTicket'> ({arrivalUid})</span>
+                <p className='passenger'>
+                    Стоимость для одного взрослого пассажира
                 </p>
-                <div className='time'>
-                    <div className="time_block">
-                        <div>
-                            <strong>
-                                {departureTimeDate}
-                            </strong>
-                        </div>
-                        <div>
-                            <span>
-                                {departureDayDate}  
-                            </span>
-                        </div>  
+            </div>
+            <p className="route">
+                {departuredCityCaption}, {departureAirportCaption}<span className='spanTicket'> ({departuredAirportUid}) &#8594;</span>{arrivalAirportCaption}<span className='spanTicket'> ({arrivalUid})</span>
+            </p>
+            <div className='time'>
+                <div className="time_block">
+                    <div>
+                        <strong>
+                            {departureTimeDate}
+                        </strong>
                     </div>
-                    <div className="time_duration">
-                        <div>
-                            <span role='img' aria-label="img">
-                                &#8986;
-                            </span>
-                            <strong>
-                                {Math.floor(duration/60)} ч {duration % 60} мин
-                            </strong>
-                        </div>
-                    </div>
-                    <div className="time_block">
-                        <div>
-                            <span>
-                                {arrivalDayDate}
-                            </span>
-                        </div>  
-                        <div>
-                            <strong>
-                                {arrivalTimeDate}
-                            </strong>
-                        </div>
+                    <div>
+                        <span>
+                            {departureDayDate}  
+                        </span>
+                    </div>  
+                </div>
+                <div className="time_duration">
+                    <div>
+                        <span role='img' aria-label="img">
+                            &#8986;
+                        </span>
+                        <strong>
+                            {Math.floor(duration/60)} ч {duration % 60} мин
+                        </strong>
                     </div>
                 </div>
+                <div className="time_block">
+                    <div>
+                        <span>
+                            {arrivalDayDate}
+                        </span>
+                    </div>  
+                    <div>
+                        <strong>
+                            {arrivalTimeDate}
+                        </strong>
+                    </div>
+                </div>
+            </div>
 
-                {transfer.length-1 > 0 &&
-                    <h1 className='transfer'>
+            {transfer.length-1 > 0 ?
+                <h1 className='transfer'>
                     <span>
                         Одна пересадка
                     </span>
-                    </h1>
-                }
-            </div>
+                </h1>
+                :
+                <hr className='ticketHr'/>
+            }
+        </div>
     )
 }
     

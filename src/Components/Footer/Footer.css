@@ -10,7 +10,6 @@
 .footer{
     height:7.5vh;
     background-Color:#343a40;
-    border-bottom:  rgb(71, 249, 255) .4vh solid;
     display: flex;
     align-items: center;
     width: 100%;

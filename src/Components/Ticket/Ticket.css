@@ -91,7 +91,10 @@ p {
 .spanTicket{
     color: blue !important;
 }
-
+.ticketHr{
+    background-color: rgb(128, 133, 132);
+    padding: .03%;
+}
 
 
 
