@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Navbar, Container, Nav} from 'react-bootstrap'
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import './Navigation.css'
@@ -7,11 +7,7 @@ import Main from '../Main/main'
 import Home from '../About/About.js'
 import Error from '../404/404.js'
 
-
-
-export default class Header extends Component {
-
-    render(){
+export default function Header(){
         return(
             <>
             <Navbar className='Navbar' collapseOnSelect expand='md' bg='dark' variant='dark' sticky="top">
@@ -41,7 +37,6 @@ export default class Header extends Component {
             </>
         )
     }
-}
 
 
 
