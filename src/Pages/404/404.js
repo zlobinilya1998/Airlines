@@ -1,18 +1,29 @@
 import React from 'react'
-import './404.css'
-import './style.scss'
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import { Nav} from 'react-bootstrap'
 
-export default class Error404 extends React.Component{
-    render(){
-        return(
-            <>
-            <div className='error'>
-                <p className='error_p'>
+
+
+import Home from '../../Pages/About/About'
+
+
+import './404.css'
+
+export default function Error404(){
+    return(
+        <>
+            <Nav.Link className='error' href='/home'>
                 Ошибка 404. Страница не найдена
-                </p>
-                <hr className='hr'/>
-            </div>
-            </>
-        )
-    }
-} 
+            </Nav.Link> 
+            <Router>
+                <Switch>
+                    <Route exact path='/home' component={Home}/>   
+                </Switch>
+            </Router>
+        </>
+    )
+}
+
+
+
+
