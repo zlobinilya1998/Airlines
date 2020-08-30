@@ -3,9 +3,9 @@ import { Navbar, Container, Nav} from 'react-bootstrap'
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import './Navigation.css'
 
-import Main from '../Main/main'
+import Main from '../Main/main.jsx'
 import Home from '../About/About.js'
-import Error from '../404/404.js'
+import Error from '../404/404.jsx'
 
 export default function Header(){
         return(

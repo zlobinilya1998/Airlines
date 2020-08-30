@@ -1,13 +1,15 @@
-import React , { useState } from 'react'
+import React from 'react'
 import './Time.css'
 
 
 export default function Time(){
+  let [date,SetDate] = React.useState(new Date().toLocaleTimeString());  
 
-  // eslint-disable-next-line
-  let [date,SetDate] = useState(new Date().toLocaleTimeString()); 
-
-
+  function tick(){
+    SetDate(new Date().toLocaleTimeString())
+  }
+  setInterval(tick,1000)
+  
   return (
     <div className='time'>
       <h2 className='localTime'>

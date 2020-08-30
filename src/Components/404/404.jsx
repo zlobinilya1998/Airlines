@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-import { Nav} from 'react-bootstrap'
+import { Nav } from 'react-bootstrap'
 import './404.css'
 
 import Home from '../About/About'
