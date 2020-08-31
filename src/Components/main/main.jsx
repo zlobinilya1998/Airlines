@@ -27,10 +27,10 @@ export default function Main(){
     }
     // Сортировка по пересадкам
     let sortTransferOne = () => {
-        SetFlights(x.filter(elem => elem.flight.legs[0].segments.length === 2))
+        SetFlights(y.filter(elem => elem.flight.legs[0].segments.length === 2))
     }
     let sortTransferZero = () => {
-        SetFlights(y.filter(elem => elem.flight.legs[0].segments.length === 1))
+        SetFlights(x.filter(elem => elem.flight.legs[0].segments.length === 1))
     }
 
     let Tickets = flights.map((ticket,index) =>{
