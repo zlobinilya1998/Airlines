@@ -7,6 +7,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-image: url(./Assets/mainBackground.png);
 }
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-self: center;
+  margin: 0;
+  width: auto;
+}
+li {
+  cursor: pointer;
+  
+}
+a:hover{
+  text-decoration: none;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

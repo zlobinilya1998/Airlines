@@ -1,22 +1,23 @@
-.Navbar{
-    /* border-top: 2.5px,rgb(133, 161, 165) !important; */
-    border-bottom: 2px solid #000;
+.navBar{
+    background-color: #343a40;
+    height: 7.5vh;
+    display: flex;
+    /* justify-content: start; */
+    align-items: center;
 }
 .NavLink{
     transition: all ease .6s;
 }
-.NavLink:hover{
-    color: rgb(51, 221, 243) !important;
+.button{
+    transition: color ease .6s;
+    color: white;
+    padding: 2%;
+    margin-left: 5%;
 }
-.NavLink:active{
-    color:  rgb(127, 232, 246) !important;
+.button:hover{
+    color:  rgb(128, 227, 240) !important;
 }
-.brand{
-    transition: all ease .6s;
-}
-.brand:hover{
-    color: rgb(51, 221, 243) !important;
-}
-.brand:active{
-    color:  rgb(127, 232, 246) !important;
+.active{
+    color: rgb(127, 232, 246);
+    text-decoration: underline;
 }

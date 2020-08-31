@@ -3,11 +3,11 @@ import data from '../../flights.json'
 import Ticket from '../Ticket/Ticket'
 import Sorting from '../Sorting/Sorting'
 import TicketBack from '../Ticket/TicketBack';
-import './main.css'
+import './TicketList.css'
 
 
 
-export default function Main(){
+export default function TicketList(){
     let [flights,SetFlights] = useState(data.result.flights)
 
     let x = data.result.flights

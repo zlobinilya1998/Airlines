@@ -8,7 +8,7 @@ function Sort(props){
                 <div className='radio_container'>
                     <div className='radio_block'>
                         <form>
-                            <strong style={{color:'turquoise'}}>Сортировать</strong>
+                            <strong style={{color:'rgb(128, 227, 180)'}}>Сортировать</strong>
                             <div>
                                 <div >
                                     <input onChange={props.sortAscendingPrice} type='radio' name='sorting'></input>
@@ -28,7 +28,7 @@ function Sort(props){
                     <hr style={{borderBottom:`2px solid #000`}}/>
                     <div className='radio_block'>
                         <form>
-                            <strong style={{color:'turquoise'}}>Фильтровать</strong>
+                            <strong style={{color:'rgb(128, 227, 180)'}}>Фильтровать</strong>
                             <div>
                                 <div>
                                     <input onChange={props.sortTransferOne} type='radio' name='sorting'></input>
