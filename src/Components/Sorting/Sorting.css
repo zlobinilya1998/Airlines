@@ -3,7 +3,6 @@
     display: inline-block;
     width: 20%;
     color: white;
-    padding-bottom: 2vh;
     min-width: 275px;
     position: fixed;
   }
@@ -28,7 +27,6 @@
   @media (max-width:911px){
     .radio_container{
       width: 100%;
-      min-height: 100px;
       position: relative;
       display: flex;
       flex-direction: column;

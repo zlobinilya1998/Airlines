@@ -6,12 +6,16 @@
     margin-top: 1vh;
     border: solid 3px silver;
     background-color: whitesmoke;
-    transition: all ease .1s;
+    transition: all ease .5s;
     cursor: pointer;
     position: static;
 }
 .ticket:hover{
     outline: turquoise 3px solid;
 }
+.hovered{
+    transform: scale(0)
+}
+
 
 

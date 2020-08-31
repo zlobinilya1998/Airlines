@@ -12,12 +12,12 @@ function Sort(props){
                 sortDescendingPrice={props.sortDescendingPrice}
                 sortAscendingTime={props.sortAscendingTime}
                 />
-                <hr className='visible'/>
+                {/* <hr className='visible'/> */}
                 <hr className='hidden'/>
-                <RadioBlockSecond
+                {/* <RadioBlockSecond
                 sortTransferOne={props.sortTransferOne}
                 sortTransferZero={props.sortTransferZero}
-                />
+                /> */}
             </div>
         )
 }

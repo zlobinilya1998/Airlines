@@ -76,7 +76,7 @@ function TicketBack(props){
                         {carrier}
                         </strong>
                 </p>
-                <button className='main_btn'>
+                <button className='main_btn' onClick={()=>props.sayHi()}>
                     Выбрать
                 </button>
             </div>
