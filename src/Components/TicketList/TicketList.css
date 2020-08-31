@@ -8,22 +8,10 @@
     background-color: whitesmoke;
     transition: all ease .1s;
     cursor: pointer;
+    position: static;
 }
 .ticket:hover{
     outline: turquoise 3px solid;
 }
 
-@media (max-width:911px){
-    .ticket{
-        width: 90% !important;
-        margin-top: 2vh;
-        margin-left: auto;
-        margin-right: auto !important;
-    }
-}
-@media (max-width:1125px){
-    .ticket{
-        margin-right: 0;
-        width: 62%;
-    }
-}
+

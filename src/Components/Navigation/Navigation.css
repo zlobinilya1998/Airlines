@@ -2,8 +2,11 @@
     background-color: #343a40;
     height: 7.5vh;
     display: flex;
-    /* justify-content: start; */
+    width: 100%;
     align-items: center;
+    position: sticky;
+    top: 0;
+    
 }
 .NavLink{
     transition: all ease .6s;

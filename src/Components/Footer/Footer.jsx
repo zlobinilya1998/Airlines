@@ -1,12 +1,14 @@
 import React from 'react'
-import Time from './Time/Time.jsx'
+
 import './Footer.css'
+
+import { Time } from '../components'
 
 
 export default function Footer(){
         return(
             <div className='footer' >
-                <Time/>
+                <Time className='footer'/>
             </div>
         )
     }

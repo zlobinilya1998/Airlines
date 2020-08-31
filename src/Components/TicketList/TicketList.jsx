@@ -1,9 +1,9 @@
 import React, { useState} from 'react';
 import data from '../../flights.json'
-import Ticket from '../Ticket/Ticket'
-import Sorting from '../Sorting/Sorting'
-import TicketBack from '../Ticket/TicketBack';
+
 import './TicketList.css'
+
+import { Ticket, TicketBack, Sorting } from '../components'
 
 
 
@@ -44,9 +44,8 @@ export default function TicketList(){
             </div>
         )
     })
-
     return(
-        <>     
+        <>  
             <Sorting
             sortAscendingPrice = {sortAscendingPrice}
             sortDescendingPrice = {sortDescendingPrice}

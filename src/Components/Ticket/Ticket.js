@@ -40,7 +40,7 @@ function Ticket({flight}){
                 </p>
             </div>
             <p className="route">
-                {departuredCityCaption}, {departureAirportCaption}<span className='spanTicket'> ({departuredAirportUid}) &#8594;</span>{arrivalAirportCaption}<span className='spanTicket'> ({arrivalUid})</span>
+                {departuredCityCaption}, {departureAirportCaption}<span className='spanTicket'> ({departuredAirportUid})</span> &#8594;{arrivalAirportCaption}<span className='spanTicket'> ({arrivalUid})</span>
             </p>
             <div className='time'>
                 <div className="time_block">

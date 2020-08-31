@@ -40,29 +40,9 @@
     text-align:center;
     color:#FAA342;
     font-size:.9rem;
-    position: relative;
-    margin-top: 15px;
+    margin-top: 2%;
 }
-    .transfer:before{
-        content: '';
-        display: block;
-        width: 40%;
-        height: 1px;
-        background: rgb(110, 110, 110);
-        position: absolute;
-        left: 0;
-        top: 50%;
-    }
-    .transfer::after{
-        content: '';
-        display: block;
-        width: 40%;
-        height: 1px;
-        background: rgb(110, 110, 110);
-        position: absolute;
-        right: 0;
-        top: 50%;
-    }
+
 .footerTicket{
     height: 60px;
     width: 100%;
@@ -75,7 +55,6 @@ p {
 .main_btn{
     margin-top: 1vh;
     width: 100%;
-    position: relative;
     height: 2rem;
     background-color: #ffc354;
     transition: all ease 1s;
@@ -96,8 +75,21 @@ p {
     padding: .03%;
 }
 
+@media (max-width:1125px){
+    .ticket{
+        margin-left: 38% !important;
+        width: 62% !important;
+    }
+}
 
-
+@media (max-width:930px){
+    .ticket{
+        width: 90% !important ;
+        margin-top: 2vh !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
 @media (max-width:768px){
     .route{
         margin-bottom: 0;
@@ -116,4 +108,53 @@ p {
     .transfer::after{
         display: none;
     }
+}
+@media (max-width:650px){
+    .ticket{
+        margin-top: 1vh ;
+        width: 100% ;
+    }
+    .time_block {
+        display: none
+    }
+    .passenger, .price{
+        margin: 0;
+    }
+    .footerTicket{
+        height: auto;
+    }
+    .transfer{
+        margin: 0;
+        background-color: rgb(190, 187, 180);
+        color: black;
+    }
+    .carrier{
+        margin: 0;
+    }
+    .main_btn{
+        margin-top: 0;
+        height: auto;
+        padding: 0;
+    }
+    .spanTicket{
+        display: none;
+    }
+    .time>div{
+        width: 100%;
+    }
+
+}
+@media (max-width:425px){
+    .ticket{
+        margin-top: 1vh !important ;
+        width: 100% !important ;
+    }
+
+}
+@media (max-width:350px){
+    .ticket{
+        margin-top: 1vh !important ;
+        width: 100%  !important;
+    }
+
 }
