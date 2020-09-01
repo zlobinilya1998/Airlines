@@ -7,7 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-image: url(./Assets/mainBackground.png);
   min-width: 320px;
-  min-height: 709px;
+  min-height: 780px;
   position: relative;
   box-sizing: border-box;
 }

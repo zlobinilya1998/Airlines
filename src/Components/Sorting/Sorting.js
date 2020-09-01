@@ -1,6 +1,6 @@
 import React from 'react'
 import './Sorting.css'
-import { RadioBlock, RadioBlockSecond } from '../components'
+import { RadioBlock } from '../components'
 
 
 
