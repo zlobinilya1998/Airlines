@@ -14,12 +14,23 @@
 .button{
     transition: color ease .6s;
     color: white;
-    padding: 2%;
-    margin-left: 5%;
 }
 .button:hover{
     color:  rgb(128, 227, 240) !important;
 }
 .active{
     color: rgb(127, 232, 246);
+}
+.navUl{
+    width: 15%;
+    display:flex;
+    justify-content:space-between;
+    margin-left:10px;
+    min-width: 200px;
+    max-width: 200px;
+}
+@media (max-width:425px){
+    .navBar{
+        justify-content: center;
+    }
 }

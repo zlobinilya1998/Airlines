@@ -11,13 +11,13 @@ export default function Navigation(){
 
 
 
-    const buttons = ['Home','Ticket']
+    const buttons = ['Home','Ticket','About us']
 
 
         return(   
             <Router>
                 <div className='navBar'>
-                    <ul>  
+                    <ul className='navUl'>  
                         {buttons.map(button=><NavLink to={`${button}`} className='button'>{button}</NavLink>) }  
                     </ul>
                 </div>
