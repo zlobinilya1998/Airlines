@@ -3,7 +3,7 @@
     text-align: center;
     margin-top: 35vh;
     font-size: 2.5rem;
-    transition: all ease .2s;
+    transition: all ease .3s;
     display: block;
     width: fit-content;
     margin-left: auto;
@@ -15,4 +15,5 @@
 .error:hover{
     outline: turquoise 2px solid;
     color: whitesmoke !important;
+    margin-top: 32vh;
 }

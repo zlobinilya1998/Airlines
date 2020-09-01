@@ -1,4 +1,3 @@
-export { default as Error } from './404/404'
 export { default as About } from './About/About'
 export { default as Footer } from './Footer/Footer'
 export { default as Time } from './Footer/Time/Time'

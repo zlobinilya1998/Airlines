@@ -6,7 +6,7 @@
     margin-top: 1vh;
     border: solid 3px silver;
     background-color: whitesmoke;
-    transition: all ease .5s;
+    transition: all ease .2s;
     cursor: pointer;
     position: static;
 }

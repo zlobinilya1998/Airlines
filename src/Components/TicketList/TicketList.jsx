@@ -51,14 +51,14 @@ export default function TicketList(){
     })
     return(
         <>  
-            <Sorting
+            {/* <Sorting
             sortAscendingPrice = {sortAscendingPrice}
             sortDescendingPrice = {sortDescendingPrice}
             sortAscendingTime = {sortAscendingTime}
             sortTransferOne = {sortTransferOne}
             sortTransferZero = {sortTransferZero}
             />
-            {Tickets}
+            {Tickets} */}
         </>
     )
     }
